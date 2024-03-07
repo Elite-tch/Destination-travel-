@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="tbook.css">
+<title>Book Now</title>
+</head>
+<body>
+
+<section class="booking-form">
+    <div class="form-header">
+        <div class="container">
+            <h2>Book Your Dream Vacation</h2>
+            <p>Explore our amazing destinations and start planning your next adventure!</p>
+        </div>
+    </div>
+    <div class="form-input container">
+        <form id="booking-form" action="#" method="post">  
+            <div class="form-group">
+                <label for="destination">Destination:</label><br>
+                <select id="destination" name="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Florence Cathedral (Duomo), Florence">Florence Cathedral (Duomo), Florence</option>
+                    <option value="Leaning Tower of Pisa, Pisa">Leaning Tower of Pisa, Pisa</option>
+                    <option value="Venice Canals, Venice">Venice Canals, Venice</option>
+                    <option value="Colosseum, Rome">Colosseum, Rome</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="arrival-date">Arrival Date:</label><br>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label><br>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="num-guests">Number of Guests:</label><br>
+                <input type="number" id="num-guests" name="num-guests" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="package">Package:</label><br>
+                <select id="package" name="package">
+                    <option value="standard">Standard</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="input" value="Calculate Total">
+            </div>
+            <div id="total-fees"></div>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</section>
+<span>
+    <p>Need help? Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+</span>
+
+<footer>
+    <p>All Right Reserved © 2024.<span> Design by Elite .</span></p>
+</footer>
+
+<script>
+document.getElementById("booking-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var destination = document.getElementById("destination").value;
+    var arrivalDate = new Date(document.getElementById("arrival-date").value);
+    var departureDate = new Date(document.getElementById("departure-date").value);
+    var numGuests = parseInt(document.getElementById("num-guests").value);
+    var packageType = document.getElementById("package").value;
+
+    var totalFees = calculateTotalFees(destination, arrivalDate, departureDate, numGuests, packageType);
+    document.getElementById("total-fees").textContent = "Total Fees: $" + totalFees.toFixed(2);
+});
+
+function calculateTotalFees(destination, arrivalDate, departureDate, numGuests, packageType) {
+    var prices = {
+        "Florence Cathedral (Duomo), Florence": {"standard": 100, "luxury": 300},
+        "Leaning Tower of Pisa, Pisa": {"standard": 150, "luxury": 400},
+        "Venice Canals, Venice": {"standard": 80, "luxury": 250},
+        "Colosseum, Rome": {"standard": 120, "luxury": 350}
+    };
+
+    var oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+    var nights = Math.round(Math.abs((departureDate - arrivalDate) / oneDay));
+
+    var pricePerNight = prices[destination][packageType];
+    var totalFees = pricePerNight * nights * numGuests;
+
+    return totalFees || 0; // Return 0 if totalFees is not valid
+}
+</script>
+
+</body>
+</html>
