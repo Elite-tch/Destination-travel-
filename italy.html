@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="italy.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Welcome To Italy</title>
+</head>
+
+<body>
+    <section class="turkey-bar">
+        <div class="t-bar-content container">
+            <a href="des.html">Back</a>
+            <div class="search_bar">
+                <input type="text" placeholder="Search....">
+                <i class="fa fa-search search"></i>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="t-hero">
+        <div class="container">
+            <div class="t-hero-content">
+                <h2>Discover Italy's charm and culinary delights!</h2>
+                <p>Welcome to Italy, home of exquisite cuisine, ancient wonders, and captivating landscapes. Whether you're exploring Rome's iconic monuments or savoring Venice's romantic ambiance, Italy promises unforgettable experiences.</p>
+                <a href="">Find Help</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="destination">
+        <div class="container-2">
+            <h2>Choose Your Destination</h2>
+            <p>Create Memories That Last a Lifetime</p>
+            <div class="des-content">
+                <div class="des-row">
+                    <div class="des-text">
+                        <h1>Colosseum, Rome:</h1>
+
+                        <p>The Colosseum is an ancient amphitheater and one of Rome's most iconic landmarks, known for its historical significance and impressive architecture..</p>
+                        <img src="citaly.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>Details :</h3>
+                        <ul>
+                            <li> Location: Piazza del Colosseo, 1</li>
+                            <li>Opening Hours: 8:30 AM to 7:15 PM daily</li>
+                            <li>Admission Fee: €16 for adults and free for children under 18.</li>
+                        </ul>
+
+                    </div>
+
+                 
+
+                </div>
+
+                <div class="des-row">
+                    <div class="des-text">
+                        <h1>Venice Canals, Venice:</h1>
+
+                        <p>The Venice Canals are a network of picturesque waterways, famous for their romantic gondola rides and charming bridges.</p>
+                        <img src="vitaly.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>Details :</h3>
+                        <ul>
+                            <li> Location: Historic city of Venice</li>
+                            <li>Opening Hours : Open 24 hours</li>
+                            <li>Admission Fee: no fees </li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="des-row">
+                    <div class="des-text">
+                        <h1>Leaning Tower of Pisa, Pisa:</h1>
+
+                        <p>The Leaning Tower of Pisa is a unique bell tower known for its distinctive tilt, attracting visitors from around the world. </p>
+                        <img src="titaly.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>Details :</h3>
+                        <ul>
+                            <li> Location: Piazza del Duomo, Pisa. </li>
+                            <li>Opening Hours: 9:00 AM - 7:00 PM (April - September), 9:00 AM - 6:00 PM (October - March)</li>
+                            <li>Admission Fee: €18 for adults, €15 for children aged 8-18, free for children under 8</li>
+                        </ul>
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="des-row">
+                    <div class="des-text">
+                        <h1>Florence Cathedral (Duomo), Florence:</h1>
+
+                        <p>The Florence Cathedral, also known as the Duomo, is a magnificent Renaissance church featuring iconic red dome and beautiful artworks.</p>
+                        <img src="fitaly.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>Details :</h3>
+                        <ul>
+                            <li> Location: Piazza del Duomo, Florence</li>
+                            <li>Opening Hours: 10:00 AM - 4:30 PM (Monday - Friday), 10:00 AM - 5:00 PM (Saturday), 1:30 PM - 4:45 PM (Sunday)</li>
+                            <li>Admission Fee: €18 for adults, free for children under 12</li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="view">
+<a href="">View All</a>
+</div>
+        </div>
+
+    </section>
+
+
+    <section class="itinerary">
+        <div class="container">
+            <h2>Plan Your Itinerary and Book Now</h2>
+            <p>Select attractions, restaurants, and activities to create your custom itinerary and book now.</p>
+            <form id="itinerary-form">
+                <label for="attractions">Attractions:</label><br>
+                <select id="attractions" multiple >
+                    <option value="hagia_sophia">Colosseum, Rome</option>
+                    <option value="blue_mosque">Venice Canals, Venice</option>
+
+                    <option value="Bosphorus">Leaning Tower of Pisa, Pisa</option>
+                    <option value="Grand Bazaar (Kapalıçarşı) ">Florence Cathedral (Duomo), Florence </option>
+
+
+                </select><br>
+
+
+                <label for="restaurants">Restaurants:</label><br>
+                <select id="restaurants" multiple >
+                    <option value="sultan_kebab">Ristorante Aroma: <br> Location: Via Labicana, 125, 00184 Roma RM, Italy <br> Opening Hours: 12:30 PM - 3:00 PM, 7:00 PM - 11:00 PM (Monday - Sunday)</option>
+                    <option value="taksim_doner">Trattoria Da Fiore: <br> Location: Calle delle Botteghe, San Marco, 3461, 30124 Venezia VE, Italy <br> Opening Hours: 12:00 PM - 3:00 PM, 7:00 PM - 10:30 PM (Tuesday - Sunday), Closed on Monday</option>
+                    <option value="beyoglu_bistro">Osteria dei Cavalieri: <br> Location: Via San Frediano, 16, 56126 Pisa PI, Italy <br> Opening Hours: 12:00 PM - 3:00 PM, 7:00 PM - 11:00 PM (Monday - Sunday)</option>
+                    <option value="kadikoy_fish">Osteria Santo Spirito : <br> Location: Piazza Santo Spirito, 16/R, 50125 Firenze FI, Italy <br> Opening Hours: 12:00 PM - 3:00 PM, 7:00 PM - 11:00 PM (Monday - Sunday)</option>
+                    
+
+                </select><br>
+
+                <label for="activities">Activities:</label><br>
+                <select id="activities" multiple >
+                    <option value="walking_tour">Tour of the Colosseum: <br> Location: Various. <br> Duration: 2 hours</option>
+                    <option value="boat_cruise">Gondola ride : <br> Duration Time: 30mins</option>
+                    <option value="shopping">Climbing the Leaning Tower:<br>Durations:30mins</option>
+                    <option value="historical_tour">Visit to the Duomo complex:<br> Duration: 4 hours</option>
+                   
+
+                </select><br>
+
+                <input type="submit" id="summit" value="Generate Itinerary">
+            </form>
+
+            <div id="itinerary"> </div>
+           
+             <div class="book">
+         <h3>Book Now</h3>
+         <p>Ready to book your trip? Click below to make reservations.</p>
+                        <a href="ibook.html">Book Now</a>
+                    </div>
+  
+            
+            
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <h2>Our Reviews / Testimonials</h2>
+            <div class="review-content">
+            <div class="review-text">
+                <h3>John Deo</h3>
+                <p>Florence Cathedral (Duomo) in Florence and the Leaning Tower of Pisa in Pisa were awe-inspiring. A journey through Italy's architectural wonders!</p>
+                     <i class="far fa-star star"></i>
+                                     <i class="far fa-star star"></i>
+
+                     <i class="far fa-star star"></i>
+                                         <i class="far fa-star star"></i>
+                                        <i class="far fa-star star"></i>
+                </div>
+                        <div class="review-text">
+                            <h3>Jane Smith</h3>
+                            <p>The Colosseum in Rome and Venice Canals stole our hearts. Italy's history and romance come alive in these iconic destinations!</p>
+            
+            
+<i class="far fa-star star"></i>
+                            <i class="far fa-star star"></i>
+                            
+                            <i class="far fa-star star"></i>
+                            <i class="far fa-star star"></i>
+                            <i class="far fa-star star"></i>
+                        </div>
+
+</div>
+<div class="view">
+<a href="" >View More</a>
+</div>
+        </div>
+
+    </section>
+    
+    
+    <section class="footer">
+                 <p>All Right Reserved © 2024.<span> Design by Elite .</span></p>
+        
+    </section>
+
+
+
+    <script>
+        document.getElementById("itinerary-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var attractions = document.getElementById("attractions").selectedOptions;
+            var restaurants = document.getElementById("restaurants").selectedOptions;
+            var activities = document.getElementById("activities").selectedOptions;
+
+            var itinerary = "<h3>Your Itinerary</h3>";
+            itinerary += "<ul>";
+            for (var i = 0; i < attractions.length; i++) {
+                itinerary += "<li>" + attractions[i].text + " (Attraction)</li>";
+            }
+            for (var j = 0; j < restaurants.length; j++) {
+                itinerary += "<li>" + restaurants[j].text + " (Restaurant)</li>";
+            }
+            for (var k = 0; k < activities.length; k++) {
+                itinerary += "<li>" + activities[k].text + " (Activity)</li>";
+            }
+            itinerary += "</ul>";
+
+            document.getElementById("itinerary").innerHTML = itinerary;
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+    background: #2d2e37 ;
+    color: lightgray;
+    
+    
+}
+header{
+    padding: 150px 0px;
+    
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+header h3{
+    text-align: center;
+    font-size: 40px;
+}
+header h1{
+    text-align: center;
+    font-size: 80px;
+}
+header h1 span{
+    color: sandybrown;
+}
+
+.icon{
+    padding-top: 60px;
+}
+
+.icon p{
+    text-align: center;
+    font-size: 27px;
+}
+
+.icons .social {
+    font-size: 65px;
+    padding: 18px;
+float: left;
+
+
+}
+
+.icons{
+    margin:20px 0px 0px 23%;
+   
+}
+
+.form-content label{
+    font-size: 45px;
+}
+
+
+
+
+.form-content input{
+    padding: 22px 20px;
+    width: 90%;
+    background:lightgray;
+   border: none;
+   outline: none;
+   margin-top: 10px;
+   border-radius: 4px;
+   font-size: 40px;
+}
+.form-content p{
+   padding-top: 8px; 
+   font-size: 25px;
+  padding-bottom: 20px;
+    
+}
+
+.form-content .checkbox{
+    display: flex;
+    align-items: center;
+    
+}
+
+#agree{
+   font-size: 80px;
+    width: 50px;
+    height: 120px;
+}
+.checkbox p{
+ padding-top:35px;
+ font-size: 24px;
+ padding-left: 15px;
+    
+}
+.checkbox p a{
+    text-decoration: none;
+    color: sandybrown;
+    
+}
+
+button {
+    margin:50px 0px 10px 20%;
+    padding: 14px 18px;
+    font-size: 20px;
+    background: sandybrown;
+    border: none;
+    font-weight: 400;
+    color: #2d2e37;
+    border-radius: 4px;
+    width: 60%;
+    text-decoration: none;
+}
+
+.log-form{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 28px;
+}
+.log-form a{
+    color: sandybrown;
+    text-decoration: none;
+    
+}
+
+
+
+
+@media screen and (min-width:300px) and (max-width: 600px){
+    
+    header{
+    padding: 40px 0px;
+    
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+header h3{
+    text-align: center;
+    font-size: 23px;
+}
+header h1{
+    font-size: 40px;
+}
+
+.icon{
+    padding-top: 30px;
+}
+
+.icon p{
+    font-size: 16px;
+}
+
+.icons .social {
+    font-size: 20px;
+    padding: 10px;
+float: left;
+
+
+
+
+}
+
+.icons{
+    margin:10px 0px 30px 20%;
+   
+}
+
+.form-content{
+    margin-top: 10px;
+    
+    
+}
+
+
+.form-content label{
+    font-size: 18px;
+}
+
+.form-content input{
+    padding: 6px ;
+    width: 90%;
+   margin-top: 5px;
+   border-radius: 4px;
+   font-size: 15px;
+}
+.form-content p{
+   padding-top: 3px; 
+   font-size: 12px;
+  padding-bottom: 10px;
+    
+}
+
+#agree{
+   height: 20px;
+    width: 30px;
+}
+.checkbox p{
+ padding-top: 15px;
+    padding-left: 3px;
+}
+
+button{
+    margin:40px 0px 10px 20%;
+    padding: 14px 18px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2d2e37;
+    border-radius: 4px;
+    width: 60%;
+    
+}
+
+.log-form{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+
+    
+        
+        
+        
+        
+        
+    }

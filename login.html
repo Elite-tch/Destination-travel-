@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sign up</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>Register</h3>
+            <h1>Epic<span>Excursion</span></h1>
+
+            <div class="icon">
+                <p>Register Quickly With: </p>
+                <div class="icons">
+                    <i class="fa fa-facebook-f social"></i>
+                    <i class="fab fa-twitter social"></i>
+                    <i class="fab fa-pinterest social"></i>
+                    <i class="fab fa-telegram social"></i>
+                    <i class="fab fa-instagram social"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-content">
+            <form action="" method="post" id="signup-form">
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+                <p>Your email will be used to log in.</p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Password" minlength="8" required><br>
+                <p>Your password must be 8 or more characters long. Do not use your email address or username as password.</p>
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <p>I agree with the <a href="#">Terms and conditions</a></>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+       <div class="log-form">
+            <p>Already Registered? <a href="#">Log in</a></p>
+           
+           
+       </div>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                redirectToNextPage();
+            } else {
+                alert("Please fill out all required fields correctly and ensure the password is at least 8 characters long.");
+            }
+        });
+
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var agree = document.getElementById("agree").checked;
+            if (email === "" || password.length < 8 || !agree) {
+                return false;
+            }
+            return true;
+        }
+
+        function redirectToNextPage() {
+            window.location.href = "des.html";
+        }
+    </script>
+</body>
+
+</html>
