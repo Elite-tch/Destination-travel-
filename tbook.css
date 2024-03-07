@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+       margin: 0px;
+       box-sizing: border-box;
+
+    
+}
+.form-header{
+     background-color: #2d2e37;
+     padding: 30px 0px;
+     text-align: center;
+     color: lightgray;
+    
+}
+.form-header h2{
+    
+    font-size: 55px;
+    font-weight: bold;
+}
+.form-header p{
+   font-size: 25px; 
+    
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.form-input{
+   margin-top: 10%; 
+}
+.form-group label{
+    font-size: 40px;
+   
+    
+}
+
+.form-group select{
+  margin: 20px 0px; 
+}
+.form-group input {
+padding: 14px 8px;
+ width: 80%;  
+ margin-top: 20px;
+ margin-bottom: 5px;
+ font-size: 40px;
+ outline: none;
+    
+}
+#destination, #package{
+    font-size: 40px;
+   padding: 20px 8px;
+ width: 80%;  
+ margin-top: 30px; 
+ outline: none;
+    
+}
+
+.form-group #input{
+    width: 35%;
+    
+}
+
+button{
+    
+
+    margin:80px 0px 10% 35%;
+    padding: 14px 18px;
+    font-size: 33px;
+    background: sandybrown;
+    border: none;
+    font-size: 45px;
+    font-weight: 400;
+    color: #2d2e37;
+    border-radius: 4px;
+}
+
+
+span p{
+ text-align: center;   
+    font-size: 25px;
+    padding-bottom: 29%;
+    
+}
+span p a{
+  text-decoration: none;  
+    
+}
+
+footer{
+ background: #2d2e37 ;  
+ color: lightgray;
+   width: 100%;
+   bottom: 0px;
+  
+}
+
+footer p{
+  padding: 20px;
+font-size: 20px;
+text-align: center;
+  
+}
+footer p span{
+  color: sandybrown;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width: 600px){
+    .form-header{
+        padding: 15px 0px;
+        
+    }
+    .form-header h2{
+    font-size: 26px;
+    
+}
+.form-header p{
+   font-size: 14px; 
+    
+}
+.form-input{
+    margin-top: 20px;
+   
+    
+}
+
+.form-group label{
+    font-size: 16px;
+   
+    
+}
+
+.form-group select{
+  margin: 2px 0px; 
+}
+.form-group input {
+padding: 6px 4px;
+ width: 80%;  
+ margin-top: 3px;
+ margin-bottom: 5px;
+ font-size: 15px;
+ outline: none;
+    
+}
+#destination, #package{
+    font-size: 14px;
+   padding: 6px 4px;
+ width: 80%;  
+ margin-top:0px;
+ outline: none;
+    
+}
+
+
+ .form-group #num-guests{
+     border: 1px solid grey;
+     
+ }
+ 
+.form-group #input{
+    width: 35%;
+    margin:10px 0px 5px 0px;
+    padding: 6px 4px;
+    font-size: 14px;
+    border: 1px solid grey;
+    background: #f0f0f0;
+}
+ 
+ #total-fees{
+    margin-left: 0px;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+button{
+    
+
+    margin:20px 0px 10% 35%;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#destination, #package{
+    font-size: 14px;
+   padding: 6px 4px;
+ width: 80%;  
+ margin-top:0px;
+ outline: none;
+    
+}
+
+span{
+    padding-top: 80px;
+    
+}
+span p{
+ text-align: center;   
+    font-size: 14px;
+    padding-bottom: 22%;
+}
+span p a{
+  text-decoration: none;  
+    
+}
+
+footer{
+ background: #2d2e37 ;  
+ color: lightgray;
+   bottom: 0px;
+   width: 100%;
+   
+}
+
+footer p{
+  padding: 10px;
+font-size: 15px;
+text-align: center;
+  
+  
+}
+footer p span{
+  color: sandybrown;
+  
+}
+
+
+
+    
+
+    }
