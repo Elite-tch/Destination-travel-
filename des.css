@@ -55,6 +55,7 @@ select{
   outline: none;
   padding:8px  12px;
   font-size: 25px;
+  border:1px solid #fff;
 }
 
 .nav{
